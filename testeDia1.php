@@ -22,19 +22,16 @@ $elementTeste = [];
 foreach ($elementsInfo as $elementInfo) {
     $elementTeste[] = $elementInfo->textContent;
 }
-//var_dump($elementTeste);
 
 
 $teste = str_replace(' ', '', $elementTeste[0]);
-
-//$teste = str_replace("\n\n\n", "\n", $teste);
 
 $teste = trim(preg_replace('/\s+/', ' ', $teste));
 
 $teste = explode(' ', $teste);
 
-
 var_dump($teste);
+
 
 
 
